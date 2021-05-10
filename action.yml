@@ -1,0 +1,34 @@
+name: "Firmware CI feature runner"
+description:
+  "Uses @nordicsemiconductor/e2e-bdd-test-runner to run features files of a
+  firmware."
+inputs:
+  device id:
+    description: "ID of the device the firmware belongs to (client ID)"
+    required: true
+  app version:
+    description:
+      "The version string to use for the app. This is used with the FOTA test."
+    required: true
+  azure credentials:
+    description: "Azure credentials as JSON string"
+    required: true
+  azure location:
+    description:
+      "Location (region) of the nRF Asset Tracker instance the device connects
+      to"
+    required: true
+  azure resource group:
+    description: "Resource group of of the nRF Asset Tracker instance"
+    required: true
+  app name:
+    description: "App name of the nRF Asset Tracker instance"
+    required: true
+  feature dir:
+    description: "Location of the feature files"
+    required: false
+    default: features
+
+runs:
+  using: "node12"
+  main: "build/index.js"
