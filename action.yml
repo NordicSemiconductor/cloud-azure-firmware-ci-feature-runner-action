@@ -28,6 +28,14 @@ inputs:
     description: "Location of the feature files"
     required: false
     default: features
+  target:
+    description: "Target board to use"
+    default: "nrf9160dk_nrf9160ns"
+    required: false
+  network:
+    description: "Network to use"
+    default: "ltem"
+    required: false
 
 runs:
   using: "node12"
