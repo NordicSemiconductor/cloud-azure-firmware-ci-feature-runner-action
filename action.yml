@@ -24,6 +24,9 @@ inputs:
   app name:
     description: "App name of the nRF Asset Tracker instance"
     required: true
+  azure iot hub dps id scope:
+    description: "ID scope for the Azure IoT Hub Device Provision Service"
+    required: true
   feature dir:
     description: "Location of the feature files"
     required: false
@@ -36,6 +39,10 @@ inputs:
     description: "Network to use"
     default: "ltem"
     required: false
+  log dir:
+    description: "Location of the log files"
+    required: false
+    default: logs
 
 runs:
   using: "node12"
