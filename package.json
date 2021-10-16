@@ -26,7 +26,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "@actions/core": "1.6.0",
-    "@azure/identity": "1.5.2",
+    "@azure/identity": "2.0.0",
     "@nordicsemiconductor/e2e-bdd-test-runner": "^14.4.50",
     "azure-iothub": "1.14.5",
     "chai-subset": "^1.6.0",
