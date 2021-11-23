@@ -19,7 +19,6 @@ const deviceId = getRequiredInput('device id')
 const appVersion = getRequiredInput('app version')
 
 const target = getRequiredInput('target')
-const network = getRequiredInput('network')
 
 const featureDir = getRequiredInput('feature dir')
 
@@ -39,7 +38,6 @@ const main = async () => {
 		deviceId,
 		appVersion,
 		target,
-		network,
 		testEnv,
 		featureDir,
 		deviceLog: fs

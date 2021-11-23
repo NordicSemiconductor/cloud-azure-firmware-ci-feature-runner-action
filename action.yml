@@ -35,10 +35,6 @@ inputs:
     description: "Target board to use"
     default: "nrf9160dk_nrf9160ns"
     required: false
-  network:
-    description: "Network to use"
-    default: "ltem"
-    required: false
   log dir:
     description: "Location of the log files"
     required: false
