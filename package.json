@@ -2,6 +2,7 @@
   "name": "@nordicsemiconductor/cloud-azure-firmware-ci-feature-runner-action",
   "version": "0.0.0-development",
   "description": "Uses @nordicsemiconductor/e2e-bdd-test-runner to run features files of a firmware.",
+  "type": "module",
   "scripts": {
     "build": "npx ncc build action.ts -o build",
     "postinstall": "husky install",
@@ -69,5 +70,6 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/github"
     ]
-  }
+  },
+  "prettier": "@nordicsemiconductor/asset-tracker-cloud-code-style/.prettierrc"
 }
