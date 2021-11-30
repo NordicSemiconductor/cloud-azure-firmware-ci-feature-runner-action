@@ -11,8 +11,6 @@
     "noImplicitThis": true,
     "alwaysStrict": true,
     "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "module": "ES2020",
-    "allowSyntheticDefaultImports": true
+    "strictFunctionTypes": true
   }
 }

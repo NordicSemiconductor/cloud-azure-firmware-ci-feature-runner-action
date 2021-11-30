@@ -3,7 +3,7 @@ import {
 	ConsoleReporter,
 	storageStepRunners,
 } from '@nordicsemiconductor/e2e-bdd-test-runner'
-import chalk from 'chalk'
+import * as chalk from 'chalk'
 import { firmwareCIStepRunners } from './steps/firmwareCI'
 import { getInput } from '@actions/core'
 import * as fs from 'fs'
