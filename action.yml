@@ -33,7 +33,7 @@ inputs:
     default: features
   target:
     description: "Target board to use"
-    default: "nrf9160dk_nrf9160ns"
+    default: "nrf9160dk_nrf9160_ns"
     required: false
   log dir:
     description: "Location of the log files"
