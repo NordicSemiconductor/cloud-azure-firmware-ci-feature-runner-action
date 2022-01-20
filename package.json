@@ -29,7 +29,7 @@
     "azure-iothub": "1.14.6",
     "chai-subset": "^1.6.0",
     "chalk": "4.1.2",
-    "node-fetch": "3.1.1",
+    "node-fetch": "3.2.0",
     "uuid": "8.3.2"
   },
   "devDependencies": {
