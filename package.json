@@ -26,7 +26,7 @@
     "@actions/core": "1.6.0",
     "@azure/identity": "2.0.4",
     "@nordicsemiconductor/e2e-bdd-test-runner": "^15.0.89",
-    "azure-iothub": "1.14.7",
+    "azure-iothub": "1.15.0",
     "chai-subset": "^1.6.0",
     "chalk": "4.1.2",
     "node-fetch": "3.2.3",
