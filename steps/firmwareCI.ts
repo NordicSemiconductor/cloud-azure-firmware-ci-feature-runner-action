@@ -1,7 +1,7 @@
 import {
-	StepRunnerFunc,
 	InterpolatedStep,
 	regexMatcher,
+	StepRunnerFunc,
 } from '@nordicsemiconductor/e2e-bdd-test-runner'
 
 export const firmwareCIStepRunners = (): ((

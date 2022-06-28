@@ -1,7 +1,7 @@
 import {
+	InterpolatedStep,
 	regexGroupMatcher,
 	StepRunnerFunc,
-	InterpolatedStep,
 } from '@nordicsemiconductor/e2e-bdd-test-runner'
 import { Registry } from 'azure-iothub'
 import * as chai from 'chai'

@@ -1,16 +1,16 @@
+import { getInput } from '@actions/core'
+import { ClientSecretCredential } from '@azure/identity'
 import {
-	FeatureRunner,
 	ConsoleReporter,
+	FeatureRunner,
 	storageStepRunners,
 } from '@nordicsemiconductor/e2e-bdd-test-runner'
+import { Registry } from 'azure-iothub'
 import * as chalk from 'chalk'
-import { firmwareCIStepRunners } from './steps/firmwareCI'
-import { getInput } from '@actions/core'
 import * as fs from 'fs'
 import * as path from 'path'
 import { deviceStepRunners } from './steps/azureIot'
-import { Registry } from 'azure-iothub'
-import { ClientSecretCredential } from '@azure/identity'
+import { firmwareCIStepRunners } from './steps/firmwareCI'
 
 const getRequiredInput = (input: string): string =>
 	getInput(input, { required: true })
