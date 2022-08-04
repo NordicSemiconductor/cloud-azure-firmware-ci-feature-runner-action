@@ -1,5 +1,5 @@
 import { getInput } from '@actions/core'
-import { ClientSecretCredential } from '@azure/identity'
+import { AzureCliCredential } from '@azure/identity'
 import {
 	ConsoleReporter,
 	FeatureRunner,
@@ -23,9 +23,6 @@ const target = getRequiredInput('target')
 const featureDir = getRequiredInput('feature dir')
 
 const testEnv = {
-	credentials: getRequiredInput('azure credentials'),
-	location: getRequiredInput('azure location'),
-	resourceGroup: getRequiredInput('azure resource group'),
 	appName: getRequiredInput('app name'),
 }
 
@@ -44,21 +41,6 @@ const main = async () => {
 			.readFileSync(path.resolve(logDir, 'device.log'), 'utf-8')
 			.split('\n'),
 		idScope,
-	}
-
-	const { clientId, clientSecret, tenantId } = JSON.parse(
-		testEnv.credentials,
-	) as {
-		clientId: string
-		clientSecret: string
-		subscriptionId: string
-		tenantId: string
-		activeDirectoryEndpointUrl: string
-		resourceManagerEndpointUrl: string
-		activeDirectoryGraphResourceId: string
-		sqlManagementEndpointUrl: string
-		galleryEndpointUrl: string
-		managementEndpointUrl: string
 	}
 
 	console.log(chalk.yellow.bold(' World:'))
@@ -85,8 +67,8 @@ const main = async () => {
 			.addStepRunners(
 				deviceStepRunners({
 					iotHubRegistry: Registry.fromTokenCredential(
-						`${testEnv.resourceGroup}IotHub.azure-devices.net`,
-						new ClientSecretCredential(tenantId, clientId, clientSecret),
+						`${testEnv.appName}IotHub.azure-devices.net`,
+						new AzureCliCredential(),
 					),
 				}),
 			)
