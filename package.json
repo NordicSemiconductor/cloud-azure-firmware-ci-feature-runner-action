@@ -23,7 +23,7 @@
   "author": "Nordic Semiconductor ASA | nordicsemi.no",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@actions/core": "1.9.0",
+    "@actions/core": "1.9.1",
     "@azure/identity": "2.1.0",
     "@nordicsemiconductor/e2e-bdd-test-runner": "^15.1.70",
     "azure-iothub": "1.15.0",
