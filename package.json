@@ -4,9 +4,7 @@
   "description": "Uses @nordicsemiconductor/e2e-bdd-test-runner to run features files of a firmware.",
   "scripts": {
     "build": "npx ncc build action.ts -o build",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
