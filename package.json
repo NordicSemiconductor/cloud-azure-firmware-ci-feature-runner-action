@@ -30,7 +30,7 @@
     "node-fetch": "3.3.0"
   },
   "devDependencies": {
-    "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.170",
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.171",
     "@types/chai-subset": "^1.3.3",
     "@types/node": "18.11.18",
     "@types/node-fetch": "3.0.2",
