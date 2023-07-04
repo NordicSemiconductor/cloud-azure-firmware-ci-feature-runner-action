@@ -23,7 +23,7 @@
   "dependencies": {
     "@actions/core": "1.10.0",
     "@azure/identity": "3.2.3",
-    "@nordicsemiconductor/e2e-bdd-test-runner": "^16.0.128",
+    "@nordicsemiconductor/e2e-bdd-test-runner": "^16.0.129",
     "azure-iothub": "1.16.3",
     "chai-subset": "^1.6.0",
     "chalk": "4.1.2",
